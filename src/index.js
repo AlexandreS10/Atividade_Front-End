@@ -1,14 +1,18 @@
-import express from 'express';
+import axios from "axios";
 
-const app = express();
+// https://rickandmortyapi.com/api
 
+async function buscarDadosApiRickandMorty() {
+  const id = 73;
+  const response = await axios.get(`https:rickandmortyapi.com/api/character/${id}`);
+  console.log(response.data);
+}
 
-app.use(express.json());
+buscarDadosApiRickandMorty();
 
-app.get('/',(request,response)=>{
-    return response.json("Ok")
-})
-
-app.listen(5555, ()=>{
-    console.log("Rodando");
-})
+// async function buscarDadosApiRickandMorty(){
+//     const body = {text:}
+//     const response = await axios.post(`https:rickandmortyapi.com/api/character/${id}`, body)
+//     console.log(response.data);
+// }
+// buscarDadosApiRickandMorty()
