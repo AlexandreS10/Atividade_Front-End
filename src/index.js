@@ -1,18 +1,21 @@
-import axios from "axios";
 
-// https://rickandmortyapi.com/api
+const api = axios.create({
+  baseUrl: "https://rickandmortyapi.com/api",
+});
+ 
+function buscarPersonagem(pagina,nome){
+  const urlCharacter= `https:rickandmortyapi.com/api/character/?page=${pagina}&name=${nome}`
 
-async function buscarDadosApiRickandMorty() {
-  const id = 73;
-  const response = await axios.get(`https:rickandmortyapi.com/api/character/${id}`);
-  console.log(response.data);
-}
 
-buscarDadosApiRickandMorty();
+api.get(urlCharacter)
+.then()
+} 
 
-// async function buscarDadosApiRickandMorty(){
-//     const body = {text:}
-//     const response = await axios.post(`https:rickandmortyapi.com/api/character/${id}`, body)
-//     console.log(response.data);
-// }
-// buscarDadosApiRickandMorty()
+ 
+  
+  
+
+
+
+
+
