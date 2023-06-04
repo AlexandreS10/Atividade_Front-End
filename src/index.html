@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,49 +19,25 @@
             <input type="text" id="input-busca" placeholder="Digite o nome do personagem">
             <button id="botao-busca">Buscar</button>
         </div>
-       
-    </header>
-    <div id="container">
-        <div class="card">
-            <img src="" alt="">
-            <h4>qualquer coisa</h4>
-        </div>
-        <div class="card">
-            <img src="" alt="">
-            <h4>qualquer coisa</h4>
-        </div>
-        
-    </div>
-    <div id="container">
-        <div class="card">
-            <img src="" alt="">
-            <h4>qualquer coisa</h4>
-        </div>
-        <div class="card">
-            <img src="" alt="">
-            <h4>qualquer coisa</h4>
-        </div>
-    </div>
-    <div id="container">
-        <div class="card">
-            <img src="" alt="">
-            <h4>qualquer coisa</h4>
-        </div>
-        <div class="card">
-            <img src="" alt="">
-            <h4>qualquer coisa</h4>
-        </div>
-    
-    </div>
-    <div id="container"> 
-    </div>
-    <div id="divImagem">
-        <img  id="imagem"src="/img/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png" alt="" >
-    </div>
-    <footer>
 
+    </header>
+    <main>
+        <section class="cards" id="container-dos-cards"></section>
+        <section class="divDaImagem">
+            <img id="imagem" src="/img/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png" alt="">
+        </section>
+
+        <div class="pagination" id="paginacao"></div>
+    </main>
+    <footer>
+        <div class="info">
+            <div id="personagens"></div>
+            <div id="localizacoes"></div>
+            <div id="episodios"></div>
+        </div>
+        <div class="dev">Desenvolvido por: <strong>Alexandre Da Silva Santos</strong> em 2023</div>
     </footer>
-       
+    <script src="index.js"></script>
 </body>
 
 </html>
