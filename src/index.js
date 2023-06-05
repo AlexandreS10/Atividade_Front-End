@@ -25,7 +25,7 @@ function filtrarPersonagens(pagina, nome = "") {
         <div class="card-info">
           <img src="${item.image}">
           <div class="info-lista">
-              <p class="p-lista"><strong>Nome: </strong>${item.name}</p>
+              <p class="p-lista"><strong>Nome: </strong><strong style="color:rgb(21, 105, 21)">${item.name}</strong></p>
               <p class="p-lista"><strong>Gênero: </strong>${item.gender}</p>   
               <p class="p-lista"><strong>Status: </strong>${item.status}</p>
               <p class="p-lista"><strong>Espécie: </strong>${item.species}</p>
