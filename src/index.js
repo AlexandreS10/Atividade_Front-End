@@ -121,9 +121,6 @@ botaoBusca.addEventListener("click", function () {
   const termoBusca = inputBusca.value;
   filtrarPersonagens(paginaAtual, termoBusca);
 });
-inputBusca.addEventListener("input", function () {
-  const termoBusca = inputBusca.value;
-  filtrarPersonagens(paginaAtual, termoBusca);
-});
+
 
 filtrarPersonagens(paginaAtual);
